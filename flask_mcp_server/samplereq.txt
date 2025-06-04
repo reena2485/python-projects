@@ -1,0 +1,28 @@
+curl -X POST http://127.0.0.1:5000/run-recon \
+  -H "Content-Type: application/json" \
+  -d '{"endpoint1": "http://127.0.0.1:7000/mock1", "endpoint2": "http://127.0.0.1:7000/mock2"}' \
+  -o recon_output.csv
+
+{
+  "mcpServers": {
+    "your-server-name": {
+      "command": "/Users/reenaupadhyay/code/python/flask_mcp_server/venv/bin/python",
+      "args": ["run.py"],
+      "cwd": "/Users/reenaupadhyay/code/python/flask_mcp_server"
+    }
+  }
+}
+
+{
+    "mcpServers": {
+        "weather": {
+            "command": "/Users/reenaupadhyay/code/python/flask_mcp_server/venv/bin/python",
+            "args": [
+                "--directory",
+                "/Users/reenaupadhyay/code/python/flask_mcp_server",
+                "run",
+                "run.py"
+            ]
+        }
+    }
+}
