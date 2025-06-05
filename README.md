@@ -1,6 +1,6 @@
 
 FLOW
-MCP server -> calls -> remote recon server -> calls -> mock json endppoints
+data recon MCP server -> calls -> remote recon server -> calls -> mock json endppoints
 
 Command to run mock_json_endpoints
 python run.py
